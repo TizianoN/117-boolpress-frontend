@@ -1,7 +1,7 @@
 import { reactive } from 'vue';
 
 export const api = {
-  baseUrl: 'https://king-prawn-app-6gjco.ondigitalocean.app',
+  baseUrl: process.env.APP_FRONTOFFICE_URL ? process.env.APP_FRONTOFFICE_URL + '/api/' : 'http://localhost:8000/api/',
 };
 
 export const store = reactive({
