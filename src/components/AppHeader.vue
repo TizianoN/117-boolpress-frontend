@@ -26,6 +26,11 @@
           <li class="nav-item">
             <router-link :to="{ name: 'posts.index' }" class="nav-link" href="#">Blog</router-link>
           </li>
+          <li class="nav-item">
+            <router-link :to="{ name: 'posts.advanced-filters' }" class="nav-link" href="#">
+              Filtri avanzati
+            </router-link>
+          </li>
         </ul>
       </div>
     </div>

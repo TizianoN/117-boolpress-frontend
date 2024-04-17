@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomePage from './pages/HomePage.vue';
 import BlogPage from './pages/BlogPage.vue';
 import PostPage from './pages/PostPage.vue';
+import BlogAdvancedFiltersPage from './pages/BlogAdvancedFiltersPage.vue';
 import NotFoundPage from './pages/NotFoundPage.vue';
 
 const router = createRouter({
@@ -30,6 +31,11 @@ const router = createRouter({
       path: '/category/:category_id',
       name: 'posts.filter-by-category',
       component: BlogPage,
+    },
+    {
+      path: '/blog/advanced-filters',
+      name: 'posts.advanced-filters',
+      component: BlogAdvancedFiltersPage,
     },
     {
       path: '/:pathMatch(.*)*',

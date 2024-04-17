@@ -33,7 +33,7 @@
         </router-link>
       </div>
       <div class="card-footer" v-if="post.tags.length">
-        <span :style="'background-color: ' + tag.color" class="badge me-2" v-for="tag in post.tags">{{
+        <span :style="'background-color: ' + tag.color" class="badge rounded-pill me-2" v-for="tag in post.tags">{{
           tag.label
         }}</span>
       </div>
